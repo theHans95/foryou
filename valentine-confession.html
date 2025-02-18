@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="valentine-confession.css">
+    <title>Hans Confession</title>
+</head>
+
+<body>
+    <audio id="bg-music" autoplay loop>
+        <source src="mencerita.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <p class="instruction">Hi Cinta, I ada something special untuk you. Tekan love untuk proceed</p>
+    <div class="container">
+        <label>
+            <div class="heart">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Love_Heart_SVG.svg"></img>
+            </div>
+            <input id="messageState" type="checkbox" style="display:none" />
+        </label>
+        <div class="message">
+            <h1 style="font-family: Cinzel, serif; font-size: 40px; letter-spacing: 1.2px;">Dear you,</h1>
+            <p>
+                <span>
+                    &emsp; I tahu I'm not the ideal person you might have imagined, but I hope you can see how much I
+                    care.
+                </span>
+                <br><br>
+
+                <span>
+                    &emsp; Thank you sebab datang dalam hidup I. Walaupun dah hampir 8 bulan kita kenal, I rasa macam
+                    tak cukup masa nak tunjukkan betapa pentingnya you untuk I. We’ve been through so much
+                    together—sometimes kita so in love, but sometimes kita macam kucing dan anjing. And for every moment
+                    I buat you rasa sakit, I truly regret it. I minta maaf.
+                </span>
+                <br><br>
+
+                <span>
+                    &emsp; Every little moment with you means more than I can put into words. Your smile, your laughter,
+                    the way you make everything feel lighter—it all makes my heart race in the best way possible. I just
+                    wanted you to know how special you are to me. You’ve filled my heart with warmth in ways I never
+                    expected, and for that, I’m grateful.
+                </span>
+                <br><br>
+
+                <span>
+                    &emsp; You buatkan I nak belajar dan perbaiki diri. Kadang-kadang I rasa I kurang sabar, and I tahu
+                    it’s not easy for you to deal with that. I’m not the sweetest person, and sometimes I struggle to
+                    express how much I appreciate you. But please know that in every moment, I selalu fikir macam mana I
+                    boleh buat things right, macam mana I boleh buat you smile.
+                </span>
+                <br><br>
+
+                <span>
+                    &emsp; I mungkin bukan Greenforest, and sometimes I feel like I’m not enough. I takde benda yang
+                    menonjol, no special talent, no wow factor yang boleh buat someone instantly fall for me. But what I
+                    do have is sincerity and the willingness to always put in the effort to make you happy.
+                </span>
+                <br><br>
+
+                <span>
+                    &emsp; I jealous sometimes, yes. Bila ada orang lain dekat dengan you, I get worried sebab I takut
+                    ada yang boleh buat you rasa lebih dihargai daripada apa yang I mampu bagi. I tahu I’m not perfect,
+                    but I boleh janji satu benda—I akan selalu cuba jadi yang terbaik untuk you.
+                </span>
+                <br><br>
+
+                <span>
+                    &emsp; More than anything, I nak you jadi my partner. But deep down, I selalu rasa I masih belum
+                    cukup baik untuk you. I’m still working on myself—I’m not fit enough, not pretty enough, and
+                    sometimes I wonder if I’ll ever be good enough for someone as amazing as you. Tapi I akan terus
+                    usaha, sebab I nak jadi seseorang yang benar-benar layak untuk you.
+                </span>
+                <br><br>
+
+                <span>
+                    &emsp; No matter what happens, I’ll always be grateful for you, for being the amazing person that
+                    you are.
+                </span>
+            </p>
+            <br>
+            <div class="sincere">
+                <p style="font-weight: bold;"> With Love,</p>
+                <p>Your Hans</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let audio = document.getElementById("bg-music");
+            audio.currentTime = 15; // Change this to the desired start time in seconds
+            audio.play();
+        });
+    </script>
+
+    <script src="jquery.js"></script>
+    <script src="jquery2.1.js"></script>
+    <script defer src="valentine-confession.js"></script>
+</body>
+
+</html>
