@@ -96,14 +96,16 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            let audio = document.getElementById("bg-music");
-            let heart = document.querySelector(".heart");
-        
-            heart.addEventListener("click", function () {
-                audio.currentTime = 15; // Start audio from 15 seconds
-                audio.play();
-            });
-        });
+    let audio = document.getElementById("bg-music");
+    let heart = document.querySelector(".heart");
+
+    heart.addEventListener("click", function () {
+        audio.currentTime = 15; // Start from 15s
+        audio.volume = 1.0; // Ensure volume is set
+        audio.play().catch(error => console.log("Error playing audio:", error));
+    });
+});
+
     </script>
 
     <script src="jquery.js"></script>
