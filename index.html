@@ -97,8 +97,12 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             let audio = document.getElementById("bg-music");
-            audio.currentTime = 15; // Change this to the desired start time in seconds
-            audio.play();
+            let heart = document.querySelector(".heart");
+        
+            heart.addEventListener("click", function () {
+                audio.currentTime = 15; // Start audio from 15 seconds
+                audio.play();
+            });
         });
     </script>
 
